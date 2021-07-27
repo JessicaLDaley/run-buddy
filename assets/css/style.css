@@ -14,6 +14,11 @@
   header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display:flex;
+    /*This property declaration puts all of the unused space in the <header> between the two elements, with the space-between value. It determines the unused space by adding up the border-width, margin, padding, and content of each child element. If these don't add up to 100% of the parent, then whatever is left over is considered unused.*/
+    justify-content:space-between;
+    /* Flex wrap instructs the container to let child elements break onto the next line when when they don't fit on one line.*/
+    flex-wrap: wrap;
   }
   
   header h1 {
@@ -21,21 +26,19 @@
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
-  }
+ }
   header a {
     text-decoration: none;
     color: #fce138;
   }
   
   header nav {
-    float: right;
     margin: 7px 0;
+  
   }
   
   header nav ul li {
     display: inline;
-  
   }
   
   header nav ul li a {
@@ -70,15 +73,18 @@
   section {
     padding: 60px;
   }
-
-.hero-cta{
+  
+  /* Hero Style Start */
+  .hero {
     background-image: url('../images/hero-bg.jpg');
     height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
-}
-.hero-form {
+  }
+  /* Hero Style End */
+  
+  .hero-form {
     border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
