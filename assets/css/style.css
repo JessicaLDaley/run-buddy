@@ -38,13 +38,19 @@
   }
   
   header nav ul li {
-    display: inline;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  /* align-items will vertically center the content.*/
+  align-items:center;
+  list-style:none;
   }
   
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    /*viewport width. By setting the value to 1.55vw, we're telling the browser that the font's size should be roughly 1.55% of the window's overall width. This means that if the browser grows or shrinks, that size will change relative to the new overall width. */
+    font-size: 1.55vw;
   }
   
   footer {
